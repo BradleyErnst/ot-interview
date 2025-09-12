@@ -1,0 +1,24 @@
+{
+  "name": "ot-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradleyErnst/ot-interview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BradleyErnst/ot-interview/issues"
+  },
+  "homepage": "https://github.com/BradleyErnst/ot-interview#readme",
+  "dependencies": {
+    "fuse.js": "^7.1.0",
+    "puppeteer": "^24.20.0"
+  }
+}
