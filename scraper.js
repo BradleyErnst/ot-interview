@@ -9,10 +9,13 @@ async function getPartners(page) {
     waitUntil: "networkidle2",
   });
 
+  // wait for JS-rendered content to load
+  await page.waitForSelector("ul.filtered-search-results li div.card.card-body h3 a.more", { timeout: 5000 });
+
   return await page.evaluate(() => {
     return Array.from(
       document.querySelectorAll(
-        "ul.filtered-search-results li div.card.cardbody h3 a.more"
+        "ul.filtered-search-results li div.card.card-body h3 a.more"
       )
     ).map(a => ({
       partner: a.innerText.trim()
@@ -25,16 +28,19 @@ async function getPartners(page) {
 // ---------------------------------------------
 async function getSolutions(page) {
   await page.goto(
-    "https://www.opentext.com/products-and-solutions/partners-and-alliences/partner-solutions-catalog",
+    "https://www.opentext.com/products-and-solutions/partners-and-alliances/partner-solutions-catalog",
     { waitUntil: "networkidle2" }
   );
+
+  // wait for JS-rendered content
+  await page.waitForSelector("#resultsList li", { timeout: 5000 });
 
   return await page.evaluate(() => {
     return Array.from(document.querySelectorAll("#resultsList li")).map(li => {
       const partnerAlt = li.querySelector("img.resultLogo")?.alt || "";
       const partner = partnerAlt.replace(/logo$/i, "").trim();
 
-      const solution = li.querySelector("h3.text-lg a.more")?.innerText.trim();
+      const solution = li.querySelector("h3.text-lg.mb-1 a.more")?.innerText.trim();
 
       return {
         partner,
