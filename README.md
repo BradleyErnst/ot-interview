@@ -16,3 +16,11 @@ Clone the repo and install dependencies:
 git clone https://github.com/BradleyErnst/ot-interview.git
 cd ot-interview
 npm install
+
+---
+
+## Run scraper
+
+Generates output:
+
+npm start 
