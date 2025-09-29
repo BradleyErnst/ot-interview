@@ -1,24 +1,12 @@
 {
   "name": "ot-interview",
   "version": "1.0.0",
-  "description": "Scrape OpenText partners and solutions",
+  "description": "OpenText Partner + Solutions Scraper",
   "main": "scraper.js",
   "scripts": {
     "start": "node scraper.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BradleyErnst/ot-interview.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BradleyErnst/ot-interview/issues"
-  },
-  "homepage": "https://github.com/BradleyErnst/ot-interview#readme",
   "dependencies": {
-    "fuse.js": "^7.1.0",
-    "puppeteer": "^24.20.0"
+    "puppeteer": "^21.5.0"
   }
 }

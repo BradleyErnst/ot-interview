@@ -1,0 +1,33 @@
+[
+  {
+    "partner": "Accenture LLP",
+    "solutions": []
+  },
+  {
+    "partner": "Cognizant Technology Solutions",
+    "solutions": [
+      "Cloud Migration Accelerator"
+    ]
+  },
+  {
+    "partner": "Infosys Technologies",
+    "solutions": [
+      "Document Management Solution",
+      "SAP Integration Toolkit"
+    ]
+  },
+  {
+    "partner": "PVA, Inc",
+    "solutions": [
+      "Ad Hoc Query",
+      "Data Governance Suite",
+      "Workflow Optimization Tools"
+    ]
+  },
+  {
+    "partner": "TCS (Tata Consultancy Services)",
+    "solutions": [
+      "Records Management Suite"
+    ]
+  }
+]
